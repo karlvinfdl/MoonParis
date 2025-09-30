@@ -1,0 +1,433 @@
+/* tete de page */
+
+html {
+   scroll-behavior: smooth;
+}
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+header.header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   top: -90px;
+}
+
+
+/* logo moonparis */
+
+img.img{ 
+    width: 90px;
+    display: flex;
+    position: fixed;
+    top:5px;
+    left: 35px;
+}
+/* barre navigation */ 
+
+nav.nav ul {
+    display : flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav.nav li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+/* barre de recherche */
+
+#barre-recherche {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 30px ;
+  margin-left: 150px ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+#result {
+  margin-top: 20px;
+  
+}
+
+.item {
+  display: none;
+  margin: 10px 0;
+}
+
+.visible {
+  display: block;
+  
+}
+
+.item img {
+  width: 100px; /* Ajuste la taille de l'image */
+  height: auto;
+  margin-top: 10px;
+}
+
+
+/* centre de la page */
+
+section.top-page {
+    background: url("../IMAGES/ALL SNEAKERS STREETWEAR POSTER (1).png");
+    background-size: cover;
+    padding: 15px;
+    position: relative;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    height: 80vh;
+    
+}
+
+h1.titre {
+    font-size: 5.5em;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+/* Style pour le titre de la section */
+h2.section-title {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Barre sous le titre */
+h2.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+/* Bouton "Tout voir" */
+section.meilleures-ventes p a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section.meilleures-ventes p a:hover {
+    background-color: darkorange;
+}
+
+/* Style pour la section de meilleures ventes */
+section.meilleures-ventes {
+    margin: 50px;
+}
+
+/* Style de la grille de chaussures */
+div.meilleures-chaussures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+/* Style pour les éléments individuels (chaussures) */
+a.no-grid {
+    position: relative;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image de fond spécifique pour chaque chaussure */
+a.AIR-FORCE-1 {
+    background-image: url("../chaussure/AIRFORCE1.jpeg");
+}
+
+a.NOCTA {
+    background-image: url("../chaussure/NOCTA1.jpeg");
+}
+
+a.NEW-BALANCE {
+    background-image: url("../chaussure/NEWBALANCE1.jpeg");
+}
+
+/* Effet au survol pour agrandir et ajouter une ombre */
+a.no-grid:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+
+/* Style des détails de la chaussure */
+div.chaussure-details {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Style du nom de la chaussure */
+p.NOM-chaussure {
+    font-size: 24px;
+    color: black;
+    font-weight: 800;
+    line-height: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Style du prix de la chaussure */
+p.PRIX-chaussure {
+    font-size: 15px;
+    color: orangered;
+    font-weight: 800;
+    line-height: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Pied de page */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #232323;
+  padding: 40px 60px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  margin: 35px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-links1,
+.footer-links2 {
+  flex: 1 1 200px;
+}
+
+.footer-title1,
+.footer-title2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.footer-links1 ul,
+.footer-links2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ff6f00;
+  padding-top: 20px;
+  font-size: 0.9em;
+}
+
+.footer-info a.cgv {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info a.cgv:hover {
+  text-decoration: underline;
+}
+
+p.copyright {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ✅ TABLETTE : largeur max 768px */
+@media (max-width: 768px) {
+
+  header.header {
+    flex-direction: column;
+    gap: 15px;
+    top: -30px;
+  }
+
+  nav.nav ul {
+    flex-direction: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  #barre-recherche {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  h1.titre {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .meilleures-chaussures {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a.no-grid {
+    min-width: 80%;
+    height: 400px;
+  }
+
+ /* ✅ TABLETTE : largeur max 768px */
+@media (max-width: 768px) {
+
+  header.header {
+    flex-direction: column;
+    gap: 15px;
+    top: -30px;
+  }
+
+  nav.nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #barre-recherche {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  h1.titre {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .meilleures-chaussures {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a.no-grid {
+    min-width: 80%;
+    height: 400px;
+  }
+
+  footer {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* ✅ MOBILE : largeur max 480px */
+@media (max-width: 480px) {
+
+  img.img {
+    width: 60px;
+    left: 10px;
+  }
+
+  h1.titre {
+    font-size: 2.5em;
+  }
+
+  #barre-recherche {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  a.no-grid {
+    height: 350px;
+  }
+
+  h2.section-title {
+    font-size: 30px;
+  }
+
+  section.meilleures-ventes {
+    margin: 20px;
+  }
+}
+
+
+/* ✅ MOBILE : largeur max 480px */
+@media (max-width: 480px) {
+
+  img.img {
+    width: 60px;
+    left: 10px;
+  }
+
+  h1.titre {
+    font-size: 2.5em;
+  }
+
+  #barre-recherche {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  a.no-grid {
+    height: 350px;
+  }
+
+  h2.section-title {
+    font-size: 30px;
+  }
+
+  section.meilleures-ventes {
+    margin: 20px;
+  }
+
+}
+
